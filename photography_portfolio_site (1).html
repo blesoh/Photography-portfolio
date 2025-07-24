@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blessing Rapando – Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      color: #222;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: url('background-image.jpg') center/cover no-repeat;
+      padding: 80px 20px;
+      text-align: center;
+      color: white;
+      background-blend-mode: overlay;
+      background-color: rgba(0,0,0,0.5);
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background: #333;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .portfolio-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .portfolio-gallery img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .portfolio-gallery img:hover {
+      transform: scale(1.05);
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    form button {
+      background: #333;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    form button:hover {
+      background: #555;
+    }
+    iframe {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      height: 360px;
+      border: none;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .about-image {
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Blessing Rapando</h1>
+    <p>Photographer & Backend Developer in Progress</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img class="about-image" src="profile.jpg" alt="My Photo">
+    <p><strong>Bio:</strong> I'm a passionate photographer with a growing interest in backend web development. I love storytelling through images and I'm currently studying backend systems to expand my skills into full web creation.</p>
+    <p><strong>Professional Summary:</strong> I combine creative vision with emerging technical skills, aiming to build innovative and impactful digital experiences.</p>
+    <p><strong>Video Pitch:</strong></p>
+    <iframe src="https://www.youtube.com/embed/your-video-id" allowfullscreen></iframe>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <h3>Photography</h3>
+    <div class="portfolio-gallery">
+      <img src="https://images.unsplash.com/photo-1589578527966-c7d1f7c89885?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="Portrait Photography">
+      <img src="https://images.unsplash.com/photo-1516031230319-79a5b4d16d62?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="Wildlife Photography">
+      <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="Street Photography">
+    </div>
+    <h3>Backend Projects (Coming Soon)</h3>
+    <p>Stay tuned! I’ll be adding my backend development work here soon.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li>UNESCO-recognized photographer – documented Kenyan cultural assets</li>
+      <li>Currently enrolled in ALX Backend Development Program</li>
+    </ul>
+    <p><a href="https://docs.google.com/document/d/1_saLwuQy4CuAbkimeTvS-uFsgHX-5YjR/edit?usp=sharing" target="_blank" style="background: #333; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">View My Resume</a></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label>Name:<input type="text" name="name"></label>
+      <label>Email:<input type="email" name="email"></label>
+      <label>Message:<textarea name="message" rows="5"></textarea></label>
+      <button type="submit">Send</button>
+    </form>
+    <p>Connect with me on:</p>
+    <p>
+      <a href="https://www.instagram.com/sobleh3/">Instagram</a> |
+      <a href="https://www.linkedin.com/in/bless-rapando-1a0991278/">LinkedIn</a> |
+      <a href="mailto:rapandoblessing@gmail.com">Email</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Blessing Rapando. All rights reserved.
+  </footer>
+</body>
+</html>
